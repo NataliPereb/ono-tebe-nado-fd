@@ -71,6 +71,7 @@
 .overlay {
   position: absolute;
   z-index: 1;
+  inset: 0;
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
@@ -130,7 +131,7 @@
   font-size: 22px;
   text-transform: uppercase;
   background: transparent;
-  border: 1px solid #ffffff;
+  border: 1px solid currentColor;
   padding: 12px 31.5px;
 }
 
@@ -185,13 +186,10 @@
   background-image: url("../images/card-lot-03.jpg");
 }
 
-.card span {
+.card h3 {
   position: relative;
   z-index: 2;
   color: #ffffff;
-}
-
-.card span:nth-of-type(1) {
   font-size: 22px;
   text-decoration: underline;
   text-transform: uppercase;
@@ -200,7 +198,10 @@
   padding: 48px 40px 0 40px;
 }
 
-.card span:last-child {
+.card p {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
   font-size: 20px;
   line-height: 1.2;
   padding: 0px 40px 48px 40px;
